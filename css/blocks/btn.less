@@ -1,0 +1,32 @@
+//main: ../style.less
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.8em 2em;
+    
+    border-radius: 1em;
+    box-shadow: 0px 5px 8px @black;
+    background: @White;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-size: 1.33rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: @black;
+    text-decoration: none;
+    text-align: center;
+    
+    transition: background .2s linear, color .2s linear, box-shadow .2s linear;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    &--ourHouse {
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+    }
+}

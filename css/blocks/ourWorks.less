@@ -1,0 +1,72 @@
+//main: ../style.less
+
+.ourWorks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.ourWorks__pos {
+    width: 33.33333%;
+    padding: 0 1rem 1rem;
+}
+
+.ourWorks__item {
+    position: relative;
+    
+    padding: 2rem 0;
+    
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px @black;
+    background: fade(@White, 35%);
+    height: 360px; 
+    text-align: center;
+    
+    transition: background .2s linear;
+    
+    &:hover {
+        background: fade(@black, 35%);
+        
+        .ourWorks__img {
+            fill: @black;
+        }
+        
+        .ourWorks__title {
+            color: @black;
+        }
+        
+        .btn {
+            color: @White;
+            background: @black;
+        }
+    }
+}
+
+.ourWorks__img {
+    width: 94px;
+    height: 94px;
+    
+    fill: @White;
+    
+    margin-bottom: 1.66rem;
+    
+    transition: fill .2s linear;
+}
+
+.ourWorks__title {
+    font-size: 2.66rem;
+    font-weight: 400;
+    color: @White;
+    
+    transition: color .2s linear;
+}
+
+@media (max-width: 968px) {
+    .ourWorks__pos {
+        width: 100%;
+    }
+    .ourWorks__item {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}

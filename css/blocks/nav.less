@@ -1,0 +1,131 @@
+//main: ../style.less
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    
+    :first-child {
+        margin-left: 0;
+    }
+}
+
+.nav__link {
+    color: fade(@White, 70%);
+    font-weight: 400;
+    font-size: 1.33rem;
+    text-decoration: none;
+    
+    margin-left: 4.33rem;
+    
+    transition: color .2s linear;
+    
+    &:hover {
+        color: fade(@White, 100%);
+    }
+    
+    &--footer {
+        margin-left: 3.5rem;
+    }
+}
+
+
+.nav__burger {
+    display: none;
+    
+    padding: 10px 2px;
+    background: none;
+    border: none;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+.nav__burger-item {
+    position: relative;
+    
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: @White;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        z-index: 1;
+        
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: @White;
+    }
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 1;
+        
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: @White;
+    }
+}
+
+@media (max-width: 968px) {
+    .nav__burger {
+        display: block;
+    }
+    
+    .nav--header {
+        display: none;
+        width: 100%;
+        
+        position: absolute;
+        right: 0;
+        top: 101%;
+        z-index: 10;
+        
+        background: #222c47;
+        padding: 10px 10px;
+        
+        .nav__link {
+            margin: 5px 0;
+            display: block;
+            text-align: right;
+        }
+    }
+    .nav--footer {
+        display: none;
+        width: 100%;
+        
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        z-index: 10;
+        
+        background: #222c47;
+        padding: 10px 10px;
+        
+        transition: width .2s linear;
+        
+        .nav__link {
+            margin: 5px 0;
+            display: block;
+            text-align: right;
+        }
+    }
+}
+
+
+
+
+
+

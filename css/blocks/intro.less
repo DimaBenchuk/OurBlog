@@ -1,0 +1,100 @@
+//main: ../style.less
+
+.intro {
+    min-height: 1148px;
+    
+    background: rgb(41, 58, 83) url("../img/intro.jpg") center no-repeat;
+    background-size: cover;
+    
+    padding-top: 15rem;
+}
+
+.intro__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro__titles {
+    width: 50%;
+}
+
+.intro__title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: @White;
+    
+    margin-bottom: 2rem;
+}
+
+.intro__subtitle {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: @White;
+}
+
+.intro__citation {
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.intro__text {
+    font-weight: 300;
+    font-size: 1.33rem;
+    line-height: 1.8;
+    color: @White;
+    
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .intro__titles {
+        width: 100%;
+        text-align: center;
+    }
+    .intro__title {
+        font-size: 3rem;
+    }
+    .intro__subtitle {
+        font-size: 1.5rem;
+    }
+    .intro__citation {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .intro__text {
+       font-size: 1rem; 
+    }
+}
+
+@media (max-width: 500px) {
+    .intro {
+        min-height: auto;
+        padding-bottom: 45px;
+        padding-top: 13rem;
+    }
+    .intro__citation {
+        padding: 0;
+    }
+    .intro__title {
+        font-size: 2.8rem;
+    }
+    .intro__subtitle {
+        font-size: 1.3rem;
+    }
+    .intro__text {
+       font-size: 0.9rem; 
+    }
+}
+
+
+
+
+
+
+
+
+

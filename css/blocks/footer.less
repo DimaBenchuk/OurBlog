@@ -1,0 +1,46 @@
+//main: ../style.less
+
+.footer {
+    position: relative;
+    padding: 2rem 0;
+    
+    background: rgb(20, 61, 88) url(../img/footer.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+}
+
+.footer__text {
+    font-size: 1.33rem;
+    font-weight: 400;
+    color: @White;
+    
+    border-right: 1px solid @White;
+    
+    padding-right: 1rem;
+}
+
+@media (max-width: 500px) {
+    .footer__box {
+        flex-direction: column-reverse;
+    }
+    .footer__copyright {
+        margin-top: 20px;
+    }
+    .footer__text {
+       font-size: 1rem; 
+    }
+}
+
+
+
+

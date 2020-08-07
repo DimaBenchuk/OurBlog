@@ -1,0 +1,26 @@
+//main: ../style.less
+
+.social {
+    padding-left: 1rem;
+}
+
+.social__img {
+    width: 35px;
+    height: 35px;
+    
+    fill: fade(@White, 70%);
+    
+    transition: fill .2s linear;
+    
+    &:hover {
+        fill: fade(@White, 100%);
+    }
+}
+
+@media (max-width: 500px) {
+    .social__img {
+         width: 25px;
+        height: 25px;
+    }
+}
+
