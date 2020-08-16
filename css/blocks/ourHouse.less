@@ -11,7 +11,9 @@
 
 .ourHouse__content {
     text-align: center;
-    padding: 0 9.5rem;
+    border-bottom: 2px solid @White;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .ourHouse__title {
@@ -25,19 +27,14 @@
 
 .ourHouse__subtitle {
     font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.1;
+    font-size: 1.33rem;
+    line-height: 1.8;
     color: @White;
-    
-    margin-bottom: 7rem;
 }
 
-
+/* ============================ MEDIA ========================= */
 
 @media (max-width: 768px) {
-    .ourHouse__content {
-        padding: 0;
-    }
     .ourHouse__title {
         font-size: 3rem;
     }
@@ -49,6 +46,9 @@
 @media (max-width: 500px) {
     .ourHouse {
         padding: 3rem 0;
+    }
+    .ourHouse__content {
+        padding: 0;
     }
     .ourHouse__subtitle {
         margin-bottom: 3rem;
